@@ -1,0 +1,381 @@
+
+#5ci tapshiriq
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (x**2+y**2<=1 and x>=0) or (x**2+y**2>=1 and y>=0 and y<=1 and y>=x-1):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#6ci
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (x**2+y**2<=1) or (x**2+y**2>=1 and x<=1 and x>=0 and y<=1 and y>=0):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#7ci
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (x**2+y**2<=1 and y>=x) or(x**2+y**2>=1 and x<=0 and x>=1 and y<=1 and y>=0):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#8ci
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (x**2+y**2<=1 and y>=0 and y<=1-x) or (x**2+y**2<=1 and x>=0 and y<=0):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#10cu
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (y>=x**2 and y<=1 and y>=0)or (y<=-x**2 and y>=-1 and y<=0) :
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#12ci
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (x**2+y**2>=4 and y<=x and x<=0 and y>=-2 and y<=0) :
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#LAB2 lmsdeki tapsiriqlar
+
+#task5
+'''
+a=float(input("enter the value of a: "))
+if a%6==0:
+    print("bolunur.")
+else:
+    print("bolunmur.")
+'''
+#task6
+'''
+a=float(input("enter the value of a: "))
+if a%2==0:
+    print("even number")
+else:
+    print("odd number")
+'''
+#task12
+'''
+a=float(input("enter the value of a: "))
+b=float(input("enter the value of b: "))
+if a>b:
+    print("a boyukdur.")
+elif a<b:
+    print("b boyukdur.")
+else:
+    print("beraberdirler.")
+'''
+#Task1
+'''
+number=int(input("enter the number: "))
+if number%3==0:
+    print("bolunur.")
+else:
+    print("bolunmur.")
+'''
+
+#Task2
+'''
+a,b,c=map(int,input("enter the values of a, b and c: ").split(","))
+d=a+b+c
+
+if (a==b==c):
+    print(f"Cemin 3 misli:{3*d}")
+else:
+    print(f"Cem:{d}")
+'''
+#Task3
+'''
+a,b,c=map(int,input("enter the values of a, b and c: ").split(","))
+cem=a+b+c
+if(a==b or b==c or a==c):
+    print("Ededlerin cemi 0-a beraberdir.")
+else:
+    print(f"Ededlerin cemi {cem}-e beraberdir.")
+'''
+#Task4
+'''
+from random import*
+a=randint(0,100)
+print(f"a:{a}")
+b=randint(0,100)
+print(f"b:{b}")
+c=randint(0,100)
+print(f"c:{c}")
+if(a>b>c or a<b<c):
+    print(f"Median {b}-e beraberdir.")
+elif (b>c>a or a>c>b):
+    print(f"Median {c}-e beraberdir.")
+elif(b>a>c or c>a>b):
+    print(f"Median {a}-a beraberdir.")
+'''
+#Task5
+'''
+from math import*
+a,b,c=map(int,input("enter the values of a, b and c: ").split(","))
+x1=0
+x2=0
+D=b**2-4*a*c
+print(f"D:{D}")
+if(D>0):
+    print("Tenliyin iki muxtelif koku var.")
+    x1=(-b+sqrt(D))/2*a
+    x2=(-b-sqrt(D))/2*a
+    print(f"x1:{x1}, x2={x2}")
+elif(D==0):
+    print("Tenliyin iki beraber koku var.")
+    x1=(-b+sqrt(D))/2*a
+    print(f"x1,x2:{x1}")
+else:
+    print("Tenliyin koku yoxdur.")
+'''
+#Task7
+'''
+cost=float(input("enter cost: "))
+discounted_cost=0
+if cost>1000:
+    discounted_cost=cost*0.95
+    print(f"endirimli qiymet:{discounted_cost}")
+elif cost>500:
+    discounted_cost=cost*0.97
+    print(f"endirimli qiymet:{discounted_cost}")
+else:
+    print("endirim yoxdur.")
+'''
+#Task6
+'''
+cost=float(input("enter cost: "))
+discounted_cost=0
+if cost>1000:
+    discounted_cost=cost*0.9
+    print(f"endirimli qiymet:{discounted_cost}")
+else:
+    print("endirim yoxdur.")
+'''
+#Task8
+'''
+weight=float(input("enter weight: "))
+height=float(input("enter height: "))
+optimal=height-weight
+if(optimal==110):
+    print("ceki optimaldir.")
+else:
+    print("ceki optimal deyil.")
+'''
+#Task9
+'''
+day=str(input("enter the day: "))
+if (day=="Monday" or day=="Tuesday" or day=="Wednesday" or day=="Thursday" or day=="Friday"):
+    print("Ish gunudur.")
+elif (day=="Saturday" or day=="Sunday"):
+    print("Ish gunu deyil.")
+else:
+    print("Heftenin gununu duzgun daxil edin.")
+ '''   
+#Graphic task e
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if(x**2+y**2<=1 and y>=-x and y>=0) or (x**2+y**2<=1 and y<=x and y<=0):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''    
+#ters funksiya
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if(y>=1/x and x>=0 and y<=-x+4) or(y<=1/x and x<=0 and y>=-x-4):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#modul,kv funksiya
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+if (y>=(x-2)**2-3 and y>=0 and x>=abs(y)) or(y>=(x-2)**2-3 and y<=0 and x<=abs(y)):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#last
+'''
+x,y=map(float,input("enter the values of x and y: ").split(","))
+
+if(x**2+y**2<=25 and x<=0 and y>=x+2) or (x**2+y**2<=25 and y<=x+2 and y<=0 and x<=0):
+    print("Oblasta daxildir.")
+else:
+    print("Oblasta daxil deyil.")
+'''
+#descriptor
+'''
+descriptor=float(input("enter the value: "))
+if descriptor<2:
+    print("Micro")
+elif descriptor>=2 and descriptor<3:
+    print("Very minor")
+elif descriptor>=3 and descriptor<4:
+    print("Minor")
+elif descriptor>=4 and descriptor<5:
+    print("Light")
+elif descriptor>=5 and descriptor<6:
+    print("Moderate")
+elif descriptor>=6 and descriptor<7:
+    print("Strong")
+elif descriptor>=7 and descriptor<8:
+    print("Major")
+elif descriptor>=8 and descriptor<10:
+    print("Great")
+elif descriptor>=10:
+    print("Meteoric")
+    
+'''
+#roulette question
+'''
+number=int(input("enter the value: "))
+print(f"The spin resulted in {number}")
+if(number>=1 and number<10 and number%2==1) or (number>=12 and number<=18 and number%2==0) or (number>=19 and number<=27 and number%2==1) or (number >=30 and number<=36 and number%2==0):
+    print(f"Pay {number}")
+    print(f"Pay Red")
+    if(number%2==0):
+        print("Pay Even")
+    else:
+        print("Pay Odd")
+    if(number>=1 and number<=18):
+        print("Pay 1 to 18")
+    else:
+        print("Pay 19 to 36")
+elif (number>1 and number<11 and number%2==0) or (number>12 and number<18 and number%2==1) or (number>=19 and number<=29 and number%2==0) or (number >=29 and number<=36 and number%2==1):
+    print(f"Pay {number}")
+    print(f"Pay Black")
+    if(number%2==0):
+        print("Pay Even")
+    else:
+        print("Pay Odd")
+    if(number>=1 and number<=18):
+        print("Pay 1 to 18")
+    else:
+        print("Pay 19 to 36")
+elif (number==0 ):
+    print(f"Pay {number}")
+    pass
+elif (number==00):
+    print(f"Pay {number}")
+    pass
+
+'''
+#Task 14
+'''
+numberOfSides=int(input("enter the side number: "))
+if (numberOfSides>=3 and numberOfSides<=10):
+    if(numberOfSides==3):
+        print(f"{numberOfSides}-Triangle")
+    elif numberOfSides==4:
+        print(f"{numberOfSides}-Quadrilateral")
+    elif numberOfSides==5:
+        print(f"{numberOfSides}-Pentagon")
+    elif numberOfSides==6:
+        print(f"{numberOfSides}-Hexagon")
+    elif numberOfSides==7:
+#Task1        print(f"{numberOfSides}-Heptagon")
+    elif numberOfSides==8:
+        print(f"{numberOfSides}-Octagon")
+    elif numberOfSides==9:
+        print(f"{numberOfSides}-Nonagon")
+    elif numberOfSides==10:
+        print(f"{numberOfSides}-Decagon")
+else:
+    print("Duzgun eded daxil edin!")
+'''
+#Task 15
+'''
+month=input("enter month: ")
+if month=="yanvar" or month=="mart" or month=="may" or month=="iyul" or month=="avqust" or month=="oktyabr" or month=="dekabr":
+   print("31 gun")
+elif month=="aprel" or month=="iyun" or month=="sentyabr" or month=="noyabr":
+    print("30 gun")
+elif month=="fevral":
+    print("28 or 29 gun")
+'''
+#Task 16
+'''
+asif=int(input("Asifin yasi: "))
+vasif=int(input("Vasifin yasi: "))
+agasif=int(input("Agasifin yasi: "))
+if asif>vasif>=agasif or asif>agasif>=vasif:
+    print("Asif yasca hamidan boyukdur.")
+elif vasif>asif>=agasif or vasif>agasif>=asif:
+    print("Vasif yasca hamidan boyukdur.")
+elif agasif>asif>=vasif or agasif>vasif>asif:
+    print("Agasif yasca hamidan boyukdur.")
+elif asif==vasif>agasif:
+    print("Asif ve Vasif Agasifden boyukdur.")
+elif vasif==agasif>asif:
+    print("Agasif ve Vasif Asifden boyukdur.") 
+elif asif==agasif>vasif:
+    print("Agasif ve Asif Vasifden boyukdur.") 
+'''
+#Task 17
+'''
+a=int(input("enter a side: "))
+b=int(input("enter b side: "))
+c=int(input("enter c side: "))
+if a==b==c:
+    print("beraberterefli")
+elif a!=b!=c:
+    print("muxtelifterefli")
+elif a==b!=c or a==c!=b or b==c!=a:
+    print("beraberyanli")
+'''
+#Task 18
+'''
+desibel=int(input("enter dB: "))
+if desibel==40:
+    print("Quiet room")
+elif desibel==70:
+    print("Alarm clock")
+elif desibel==106:
+    print("Gas lawnmower")
+elif desibel==130:
+    print("Jackhammer")
+elif desibel<40 or desibel>130:
+    print("duzgun eded daxil edin.")
+'''
+#Task19 ?????
+
+
+#Task21
+'''
+xana = input("Xananın ünvanını daxil edin (məsələn: a1, d5): ")
+
+sütun = xana[0]
+sıra = int(xana[1])
+
+if sütun in ['a', 'c', 'e', 'g']:
+    if sıra % 2 == 0:
+        print( "ağ")
+    else:
+        print( "qara")
+elif sütun in ['b', 'd', 'f', 'h']:
+    if sıra % 2 == 0:
+        print("qara")
+    else:
+        print( "ağ")
+
+
+if len(xana) == 2 and xana[0] in ['a', 'b', 'c', 'd', 'e', 'f', 'g'] and 1 <= int(xana[1])<= 8:
+    print("Duzgun xanadir.")
+else:
+    print("Duzgun xana daxil edin!")
+'''
+
+
